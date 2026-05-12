@@ -5,6 +5,9 @@
   <input type="number" [(ngModel)]="meters">
   <button (click)="convertMetersToFeet()">Konvertera</button>
   <p>{{ feet }} ft</p>
+  <input type="number" [(ngModel)]="feet">
+  <button (click)="convertFeetToMeters()">Feet till meter</button>
+  <p>{{ meters }} m</p>
 </div>
 
 <div>
@@ -12,4 +15,7 @@
   <input type="number" [(ngModel)]="celsius">
   <button (click)="convertCelsiusToFahrenheit()">Konvertera</button>
   <p>{{ fahrenheit }} °F</p>
+  <input type="number" [(ngModel)]="fahrenheit">
+<button (click)="convertFahrenheitToCelsius()">Fahrenheit till Celsius</button>
+<p>{{ celsius }} °C</p>
 </div>

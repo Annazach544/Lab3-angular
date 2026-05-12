@@ -25,3 +25,10 @@ export class Converter {
   }
 }
 
+convertFeetToMeters() {
+  this.meters = this.feet / 3.28084;
+}
+
+convertFahrenheitToCelsius() {
+  this.celsius = (this.fahrenheit - 32) * 5 / 9;
+}
