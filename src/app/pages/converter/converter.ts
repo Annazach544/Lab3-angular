@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './converter.css',
 })
 export class Converter {
-
   meters: number = 0;
   feet: number = 0;
 
@@ -20,15 +19,15 @@ export class Converter {
     this.feet = this.meters * 3.28084;
   }
 
+  convertFeetToMeters() {
+    this.meters = this.feet / 3.28084;
+  }
+
   convertCelsiusToFahrenheit() {
     this.fahrenheit = (this.celsius * 9 / 5) + 32;
   }
-}
 
-convertFeetToMeters() {
-  this.meters = this.feet / 3.28084;
-}
-
-convertFahrenheitToCelsius() {
-  this.celsius = (this.fahrenheit - 32) * 5 / 9;
+  convertFahrenheitToCelsius() {
+    this.celsius = (this.fahrenheit - 32) * 5 / 9;
+  }
 }
